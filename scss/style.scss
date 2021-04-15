@@ -64,7 +64,8 @@ nav ul li a
 	padding:20px;
 	font-size: 16px;
     font-weight: bold;
-    line-height: 16px;;
+    line-height: 16px;
+    text-transform: uppercase;
 }
 nav li:hover a{
    
@@ -107,14 +108,14 @@ text-align: center;}
     font-size: 42px;
 }
 
-.product
+#product
 {
     height: 1000px;
     background: #eeeeee;
     
 
 }
-.product p{
+#product p{
     font-size: 24px;
     font-weight: bold;
     color: black;
@@ -127,6 +128,7 @@ text-align: center;}
     justify-content: space-between;
     align-items: center;
     padding: 0 30px;
+    
    
  }
  
@@ -140,21 +142,29 @@ text-align: center;}
      
       }
      
+     
   .card:hover .hovs {
    width: 100%;
    height: 100%;
+   position: absolute;
 }
 .hovs
 {
-background: rgba(0, 0, 0, 0.7);
+background:black;
 
 height: 100%;
 width: 0%;
-top: 0;
-left:0;
-position:relative;
-transition: 0.9s;background-size: cover;
+top: 0px;
+left: 0;
+position:absolute;
+transition: 0.9s;
 
+}
+.hovs .content p
+{
+    color: white;
+    overflow: hidden;
+    font-size: 15px;
 }
 
 .des-new
